@@ -1,0 +1,74 @@
+
+@import "header.css";
+@import "candidat.css";
+@import "biografiya.css";
+@import "video.css";
+@import "time.css";
+@import "footer.css";
+@import "modal.css";
+@import "flipclock.css";
+
+@font-face {
+  font-family: "Geometrialight";
+  src: url("../fonts/Geometria.woff") format("truetype"); }
+
+@font-face {
+  font-family: "Geometria";
+  src: url("../fonts/Geometria-Medium.woff") format("truetype"); }
+
+@font-face {
+  font-family: "Geometria-ExtraBold";
+  src: url("../fonts/Geometria-ExtraBold.woff") format("truetype"); }
+
+:root {
+    --default: Geometria, sans-serif;
+    --gray: #828282;
+    --blue: #A3D3FF;
+    --yellow: #F56B1E;
+    --white: #fff;
+    --black: #000;
+    --gold: #c8a35f;
+    --dark: #2f343a;
+    --graylight: #F1F1F1;
+}
+
+*, ::after, ::before {
+    box-sizing: border-box;
+    outline: none;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: var(--default);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: var(--black);
+    background-color: var(--white);
+}
+
+.container {
+    max-width: 1180px;
+    margin: 0 auto;
+
+    @media (max-width: 1180px) {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+        @media (max-width: 480px) {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+
+
+
+.flip-clock-divider .flip-clock-label {
+  color: #ffffff;
+  font-size: 31px;
+  font-weight: 400;
+  letter-spacing: 2.4px;
+}
+
+

@@ -1,0 +1,139 @@
+.video {
+  padding-bottom: 100px;
+
+  @media(max-width: 480px){
+    padding-bottom: 0px;
+  }
+
+  &-container {
+    display: flex;
+
+    @media(max-width: 767px){
+      flex-direction: column;
+    }
+  }
+
+  &__content {
+    width: 50%;
+
+    @media(max-width: 1180px){
+      width: 45%;
+    }
+
+    @media(max-width: 767px){
+      width: 100%;
+      height: 331px;
+    }
+
+    iframe {
+      @media(max-width: 1180px){
+        margin-left: -20px;
+      }
+
+      @media(max-width: 767px){
+        margin-left: 0px;
+      }
+    }
+  }
+
+  &__form {
+    width: 50%;
+    padding-left: 80px;
+    margin-bottom: 48px;
+
+    @media(max-width: 1180px){
+      width: 55%;
+      padding-left: 20px;
+    }
+
+    @media(max-width: 767px){
+      width: 100%;
+      padding: 0;
+    }
+  }
+
+  &__title {
+    color: #1e1e1e;
+    font-family: "Geometria-ExtraBold";
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 72px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    margin-bottom: 60px;
+    padding-top: 15px;
+
+    @media(max-width: 1170px){
+      font-size: 22px;
+      margin-bottom: 40px;
+    }
+
+    @media(max-width: 480px){
+      font-size: 18px;
+      letter-spacing: 0.9px;
+      margin-bottom: 0px;
+    }
+  }
+  
+  &__inputt {
+    width: 484px;
+    height: 67px;
+    border-radius: 29px;
+    border: 1px solid #252525;
+    color: #1e1e1e;
+    font-family: Geometria;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 72px;
+    letter-spacing: 0.9px;
+    padding: 0 28px;
+    margin-bottom: 30px;
+
+    @media(max-width: 1180px){
+      width: 100%;
+      min-width: 351px;
+      
+    }
+
+    @media(max-width: 480px){
+      min-width: 281px;
+      height: 49px;
+      font-size: 13px;
+      letter-spacing: 0.9px;
+      margin-bottom: 20px;
+    }
+  }
+
+  &__btn {
+    width: 312px;
+    height: 68px;
+    border-radius: 30px;
+    background-color: #1f59ec;
+    color: #ffffff;
+    font-family: "Geometria-ExtraBold";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 52.06px;
+    letter-spacing: 1.11px;
+    border: 2px solid transparent;
+    margin: 0 auto;
+    display: block;
+    transition: all .3s;
+
+    @media(max-width: 480px){
+      width: 217px;
+      height: 47px;
+      font-size: 12px;
+      letter-spacing: 0.9px;
+      line-height: 20px;
+    }
+
+    &:hover {
+      background-color: #fff;
+      color: #1f59ec;
+      border: 2px solid  #1f59ec;
+      box-shadow: 0 0 10px black;
+      cursor: pointer;
+    }
+  }
+}

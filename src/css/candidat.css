@@ -1,0 +1,346 @@
+.candidat {
+  background-color:  #ebebeb;
+  overflow: hidden;
+
+  &-container {
+    position: relative;
+    display: flex;
+    padding-top: 30px;
+
+    @media(max-width: 1023px){
+      padding-top: 0px;
+    }
+
+  }
+
+  &__block {
+    width: 500px;
+    border-left: 7px solid #25a8ec;
+    padding: 15px;
+    padding-right: 0;
+    margin-left: auto;
+    margin-right: 150px;
+    margin-bottom: 65px;
+
+    @media(max-width: 1100px){
+      width: 415px;
+      margin-right: 110px;
+    }
+    
+    @media(max-width: 1023px){
+      margin-left: 0;
+      margin-bottom: 10px
+    }
+
+    @media(max-width: 550px){
+      border-left: 2px solid #25a8ec;
+      width: 159px;
+      padding: 0;
+      padding-left: 5px;
+    }
+  }
+
+  &__title {
+    color: #1c1c1c;
+    font-family: Geometria;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 1.5px;
+    margin: 0;
+
+    @media(max-width: 1100px){
+      font-size: 24px;
+    }
+
+    @media(max-width: 767px){
+      font-size: 14px;
+      letter-spacing: 0.7px;
+      line-height: 18px;
+    }
+  }
+
+  &__disc {
+    color: #1c1c1c;
+    font-family: Geometria;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 18px;
+    letter-spacing: 0.8px;
+    margin-bottom: 0;
+    text-align: right;
+    padding-right: 10px;
+
+    @media(max-width: 1100px){
+      font-size: 14px;
+    }
+
+    @media(max-width: 767px){
+      font-size: 9px;
+      letter-spacing: 0.45px;
+      text-align: left;
+      line-height: 12px;
+    }
+  }
+
+  &__flag {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-image: url("../src/img/main/flag.png");
+    background-repeat: no-repeat;
+    width: 160px;
+    height: 100%;
+    background-size: cover;
+
+    @media(max-width: 1023px){
+      background-size: 50% 100%;
+      background-position: center right;
+    }
+
+    @media(max-width: 767px){
+      background-size: 30% 100%;
+    }
+  }
+
+  &-wrap {
+    align-self: flex-start;
+    position: relative;
+    margin-right: 20px;
+    padding-top: 70px;
+    margin-left: auto;
+
+    @media(max-width: 1023px){
+      padding-top: 40px;
+    }
+
+    @media(max-width: 767px){
+      padding-top: 25px;
+    }
+  }
+
+  &__blockbel {
+    color: #159612;
+    font-family: "Geometria-ExtraBold";
+    font-size: 48px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    width: 500px;
+    text-align: right;
+    line-height: 60px;
+
+    @media(max-width: 1100px){
+      margin-right: 110px;
+    }width: 500px;
+
+    @media(max-width: 1023px){
+      width: auto;
+    }
+
+    @media(max-width: 767px){
+      font-size: 24px;
+      letter-spacing: 1.2px;
+      width: 190px;
+      text-align: left;
+      line-height: 25px;
+      margin-bottom: 85px;
+      padding-left: 5px;
+    }
+
+    span {
+      color: #c82121;
+      display: block;
+    }
+  }
+
+  &__icons {
+    padding-top: 50px;
+    position: relative;
+    margin-bottom: 120px;
+
+    @media(max-width: 1023px){
+      margin-bottom: 10px;
+    }
+
+    @media(max-width: 767px){
+      display: flex;
+      position: absolute;
+      bottom: -25px;
+      z-index: 6;
+    }
+
+  }
+
+  &__icon {
+    width: 42px;
+    height: 42px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    margin-bottom: 23px;
+    color: var(--white);
+    text-align: center;
+    transition: all .3s;
+
+    @media(max-width: 1023px){
+      width: 35px;
+      height: 35px;
+    }
+
+    @media(max-width: 767px){
+        margin-right: 10px;
+    }
+
+    &:hover {
+        box-shadow: 0 0 10px white;
+    }
+
+    a {
+      color: var(--white);
+    }
+
+    i {
+      padding-top: 12px;
+      font-size: 18px;
+
+      @media(max-width: 1023px){
+        padding-top: 8px;
+      }
+    }
+
+
+  }
+
+  & .candidat__icon-teleg {
+    overflow: hidden;
+
+    .fa-telegram {
+      color: #0e85d8;
+      background: white;
+      font-size: 38px;
+      overflow: hidden;
+      padding-top: 0px;
+
+      @media(max-width: 1023px){
+        position: relative;
+        left: -4px;
+        top: -4px;
+      }
+    }
+  }
+
+  &__blue-angle {
+    position: absolute;
+    width: 956px;
+    height: 724px;
+    background-color: #0e85d8;
+    bottom: 0;
+    left: 0;
+    transform: rotate(55deg) translate(-178px, 642px);
+
+    @media(max-width: 1023px){
+      transform: rotate(56deg) translate(-178px, 748px);
+    }
+
+    @media(max-width: 767px){
+      z-index: 5;
+      transform: rotate(8deg) translate(-165px, 712px);
+    }
+  }
+
+  &__img {
+    min-width: 304px;
+    height: 470px;
+    background-image: url("../src/img/main/man-like.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: relative;
+    align-self: flex-end;
+    margin-left: 95px;
+
+    @media(max-width: 1150px) {
+      margin-left: 20px;
+    }
+
+    @media(max-width: 1023px) {
+      min-width: 215px;
+      height: 330px;
+    }
+
+    @media(max-width: 767px){
+      min-width: 116px;
+      height: 206px;
+      align-self: flex-start;
+      margin: 0px;
+      margin-top: 20px;
+      margin-left: -20px;
+      margin-right: 5px;
+    }
+  }
+
+}
+
+.slogan {
+  display: flex;
+  justify-content: center;
+  padding: 0 10px;
+  position: relative;
+  top: -85px;
+
+  @media(max-width:1023px){
+    top: -25px;
+  }
+
+  @media(max-width: 767px){
+    flex-direction: column;
+    position: static;
+    align-items: center;
+    padding-top: 35px;
+    padding-bottom: 80px;
+
+  }
+
+  &__item {
+    width: 326px;
+    height: 138px;
+    box-shadow: 0 3px 24px rgba(35, 35, 35, 0.11);
+    border-radius: 20px;
+    background-color: #ffffff;
+    color: #2a2a2a;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 30px;
+    letter-spacing: 1.1px;
+    padding-top: 52px;
+    padding-left: 22px;
+    background-image: url("../src/img/main/quotes.png");
+    background-repeat: no-repeat;
+    background-position: left 10px top 60%;
+
+    @media(max-width: 1023px){
+      font-size: 16px;
+      width: 239px;
+      height: 85px;
+      padding-top: 26px;
+      padding-left: 20px;
+    }
+
+    @media(max-width: 767px){
+      margin-bottom: 13px;
+      width: 261px;
+      height: 73px;
+      background-size: 52px 37px;
+    }
+  }
+  &__item:not(:last-child) {
+    margin-right: 38px;
+
+    @media(max-width: 1023px){
+      margin-right: 15px;
+    }
+
+    @media(max-width: 767px){
+      margin-right: 0;
+    }
+  }
+}

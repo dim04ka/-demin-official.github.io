@@ -1,0 +1,153 @@
+.footer {
+  display: flex;
+
+  @media(max-width: 767px){
+    flex-direction: column-reverse;
+  }
+
+  &__maps {
+    width: 50%;
+
+    @media(max-width: 767px){
+      width: 100%;
+    }
+
+    iframe {
+      height: 100%;
+
+      @media(max-width: 480px){
+        height: 310px;
+      }
+    }
+  }
+
+  &__contact {
+    width: 50%;
+    padding-top: 60px;
+    padding-left: 60px;
+    max-width: 600px;
+    text-align: center;
+    background-image: url("../src/img/main/maps.png");
+    background-repeat: no-repeat;
+    background-position: right;
+
+    @media(max-width: 1100px){
+      padding-left: 30px;
+    }
+
+    @media(max-width: 767px){
+      width: 100%;
+      max-width: 100%;
+    }
+
+    @media(max-width: 480px){
+      padding: 15px 0;
+      background-size: 240px 200px;
+      background-position: right top;
+    }
+  }
+
+  &__title {
+    font-family: "Geometria-ExtraBold";
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 72px;
+    color: #212121;
+    letter-spacing: 1.5px;
+    margin-bottom: 70px;
+
+    @media(max-width: 1100px){
+      font-size: 20px;
+      letter-spacing: 1px;
+    }
+
+    @media(max-width: 480px){
+      font-size: 18px;
+      letter-spacing: 0.9px;
+      margin-bottom: 14px;
+    }
+  }
+
+  &__btn {
+    width: 358px;
+    height: 58px;
+    border-radius: 29px;
+    background-color: #0e85d8;
+    display: block;
+    text-align: center;
+    padding-top: 20px;
+    color: #ffffff;
+    font-family: Geometrialight;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 16px;
+    letter-spacing: 1.8px;
+    text-decoration-line: none;
+    margin: 0 auto;
+    margin-bottom: 100px;
+
+
+    @media(max-width: 1100px){
+      width: 306px;
+      height: 51px;
+      font-size: 16px;
+      letter-spacing: 1.6px;
+      padding-top: 15px;
+      margin-bottom: 70px;
+    }
+
+    @media(max-width: 480px){
+      margin-bottom: 45px;
+      width: 297px;
+      height: 58px;
+      padding-top: 20px;
+    }
+
+    &:hover {
+      box-shadow: 0 0 10px #000;
+    }
+  }
+
+  &__icons {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+
+  &__icon {
+    width: 42px;
+    height: 42px;
+    border: 2px solid #353434;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 22px;
+    padding-top: 4px;
+    color: #353434;
+    margin-right: 20px;
+    transition: all .3s;
+
+    &:hover {
+      box-shadow: 0 0 10px #000;
+    }
+  }
+
+  & .footer__icon-teleg {
+    overflow: hidden;
+    padding-top: 0px;
+
+    .fa-telegram {
+      color: white;
+      background: #353434;
+      font-size: 38px;
+      overflow: hidden;
+      padding-top: 0px;
+
+      /* @media(max-width: 1023px){
+        position: relative;
+        left: -4px;
+        top: -4px;
+      } */
+    }
+  }
+
+}

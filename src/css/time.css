@@ -1,0 +1,84 @@
+.time {
+  padding: 90px 0;
+
+  @media(max-width: 700px){
+    padding: 30px 0;
+  }
+
+  background-image: url("../src/img/main/time.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  &__title {
+    text-align: center;
+    color: #ffffff;
+    font-family: "Geometria-ExtraBold";
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 72px;
+    text-transform: uppercase;
+    letter-spacing: 2.4px;
+    margin-bottom: 85px;
+
+    @media(max-width: 768px){
+      margin-bottom: 70px;
+    }
+
+    @media(max-width: 700px){
+      margin-bottom: 30px;
+      font-size: 24px;
+      letter-spacing: 1.2px;
+      line-height: 30px;
+    }
+  }
+  
+  &__btn {
+    width: 312px;
+    height: 68px;
+    border-radius: 30px;
+    background-color: #b41c03;
+    font-family: "Geometria-ExtraBold";
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 72px;
+    color: #ffffff;
+    letter-spacing: 0.9px;
+    text-decoration-line: none;
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    transition: all .3s;
+
+    @media(max-width: 480px){
+      width: 217px;
+      height: 47px;
+      font-size: 12px;
+      line-height: 50px;
+    }
+
+    &:hover {
+      box-shadow: 0 0 10px #fff;
+      cursor: pointer;
+    }
+  }
+
+  &__clock {
+    @media(max-width: 700px){
+      transform: scale(0.5) translateX(-645px);
+      width: max-content !important;
+      left: 50%;
+    }
+  }
+}
+
+.times {
+  width: 640px;
+  margin: 0 auto;
+  margin-bottom: 60px;
+  
+
+  @media(max-width: 700px){
+    width: auto;
+    margin-bottom: 30px;
+  }
+}
