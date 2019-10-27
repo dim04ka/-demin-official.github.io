@@ -21,17 +21,24 @@ $(function(){
 	clock.setCountdown(true);
 	clock.start();
 
-
 	//style
-	$('.flip-clock-divider.seconds .flip-clock-label').html('Секунд');
-	$('.flip-clock-divider.minutes .flip-clock-label').html('Минут');
-	$('.flip-clock-divider.hours .flip-clock-label').html('Часов');
-	$('.flip-clock-divider.days .flip-clock-label').html('Дней');
-
-
-
-
+	$('.flip-clock-divider.seconds .flip-clock-label').html('Секунд').css("right","-128px");
+	$('.flip-clock-divider.minutes .flip-clock-label').html('Минут').css("right","-124px");;
+	$('.flip-clock-divider.hours .flip-clock-label').html('Часов').css("right","-122px");;
+	$('.flip-clock-divider.days .flip-clock-label').html('Дней').css("right","-115px");;
 });
+
+
+//remove placeholder
+
+$(function(){
+	if (window.innerWidth < 769) {
+		$('input[type=email]').attr('placeholder','E-mail для ответа');
+	} else {
+		$('input[type=email]').attr('placeholder','E-mail, на который мы отправим ответ');
+	}
+})
+
 
 $(function(){
   var $page = $('html, body');

@@ -601,7 +601,7 @@
       height: 8px;
       background-color: #0e85d8;
       display: block;
-      margin-top: 15px
+      margin-top: 20px
     }
 @media(max-width: 480px){
 
@@ -701,8 +701,14 @@
       top: 20px
   }
     }
+@media(max-width: 767px){
+
+  .biografiya__bg-right {
+      transform: translateX(-15px)
+  }
+    }
 .biografiya__image {
-    background-image: url(../src/img/main/man-on.png);
+    background-image: url(../src/img/main/man-on2.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -711,7 +717,7 @@
     position: absolute;
     top: -69px;
     left: 50%;
-    margin-left: -104px
+    margin-left: -90px
   }
 @media(max-width: 1023px){
 
@@ -791,7 +797,7 @@
     font-family: "Geometria-ExtraBold";
     font-size: 1.875rem;
     font-weight: 400;
-    line-height: 4.5rem;
+    line-height: 2.8125rem;
     text-transform: uppercase;
     letter-spacing: 0.09375rem;
     margin-bottom: 60px;
@@ -809,7 +815,11 @@
   .video__title {
       font-size: 1.125rem;
       letter-spacing: 0.05625rem;
-      margin-bottom: 0px
+      margin-bottom: 0px;
+      text-align: center;
+      line-height: 1.625rem;
+      margin-bottom: 25px;
+      padding-top: 30px
   }
     }
 .video__inputt {
