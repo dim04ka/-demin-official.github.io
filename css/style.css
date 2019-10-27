@@ -712,20 +712,20 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    width: 215px;
+    width: 250px;
     height: 690px;
     position: absolute;
     top: -69px;
     left: 50%;
-    margin-left: -90px
+    margin-left: -110px
   }
 @media(max-width: 1023px){
 
   .biografiya__image {
-      width: 160px;
+      width: 190px;
       height: 500px;
       top: -53px;
-      margin-left: -80px
+      margin-left: -100px
   }
     }
 .video {
