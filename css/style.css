@@ -1,61 +1,56 @@
 .header {
-  padding: 15px 0 30px;
+  padding: 15px 0 30px
 }
-
-  .header__line {
+@media(max-width: 480px){
+.header {
+    padding: 5px 0
+}
+  }
+.header__line {
     display: flex;
     align-items: center;
   }
-
-  .header__logo_1 {
+.header__logo_1 {
     margin-right: 38px;
   }
-
-  @media(max-width: 767px) {
+@media(max-width: 767px) {
 
     .header__logo_1 img {
         width: 66px;
         height: 66px
     }
       }
-
-  @media(max-width: 767px) {
+@media(max-width: 767px) {
   .header__logo_1 {
       margin-right: 0px
   }
     }
-
-  .header__logo_2 {
+.header__logo_2 {
     margin-right: 10px
   }
-
-  @media(max-width: 767px){
+@media(max-width: 767px){
 
   .header__logo_2 {
       display: none
   }
     }
-
-  .header__nav {
+.header__nav {
     margin-left: auto;
     margin-right: 40px
   }
-
-  @media(max-width: 1140px) {
+@media(max-width: 1140px) {
 
   .header__nav {
       margin-right: 10px
   }
     }
-
-  @media(max-width: 1023px) {
+@media(max-width: 1023px) {
 
   .header__nav {
         display: none
   }
     }
-
-  .header__link{
+.header__link{
     color: #171717;
     font-family: Geometria;
     font-size: 0.875rem;
@@ -66,31 +61,26 @@
             text-decoration-line: none;
     transition: all .3s
   }
-
-  @media(max-width: 1140px) {
+@media(max-width: 1140px) {
 
   .header__link{
       font-size: 0.75rem
   }
     }
-
-  .header__link:hover{
+.header__link:hover{
       color: #0e85d8;
     }
-
-  .header__link:not(:last-child) {
+.header__link:not(:last-child) {
 
     margin-right: 30px
   }
-
-  @media(max-width: 1140px) {
+@media(max-width: 1140px) {
 
   .header__link:not(:last-child) {
       margin-right: 10px
   }
     }
-
-  .header__email {
+.header__email {
     color: #ffffff;
     font-family: Geometrialight;
     font-size: 0.875rem;
@@ -107,26 +97,25 @@
             text-decoration-line: none;
     transition: all .3s
   }
-
-  @media(max-width: 1023px) {
+@media(max-width: 1023px) {
 
   .header__email {
         margin-left: auto
   }
     }
-
-  @media(max-width: 767px){
+@media(max-width: 767px){
 
   .header__email {
       min-width: 180px;
       height: 40px;
       padding-top: 12px;
       letter-spacing: 0.0625rem;
-      font-size: 0.625rem
+      font-size: 0.625rem;
+      padding-left: 10px;
+      padding-right: 10px
   }
     }
-
-  .header__email:hover {
+.header__email:hover {
       box-shadow: 0 0 10px #000;
     }
 .candidat {
@@ -672,7 +661,8 @@
   .biografiya__lesson {
       font-size: 0.875rem;
       letter-spacing: 0.04375rem;
-      padding-top: 15px
+      padding-top: 15px;
+      line-height: 1.125rem
   }
     }
 .biografiya__lesson:hover {
@@ -834,7 +824,8 @@
     line-height: 4.5rem;
     letter-spacing: 0.05625rem;
     padding: 0 28px;
-    margin-bottom: 30px
+    margin-bottom: 30px;
+    font-size: 1rem
   }
 @media(max-width: 1180px){
   
@@ -1079,7 +1070,9 @@
     -webkit-text-decoration-line: none;
             text-decoration-line: none;
     margin: 0 auto;
-    margin-bottom: 100px
+    margin-bottom: 100px;
+    padding-left: 10px;
+    padding-right: 10px
   }
 @media(max-width: 1100px){
 
@@ -1528,6 +1521,12 @@
 *, ::after, ::before {
     box-sizing: border-box;
     outline: none;
+}
+input[type="email"],
+input[type="text"],
+input[type="button"],
+input[type="submit"] {
+     -webkit-appearance: none;
 }
 body, html {
     margin: 0;

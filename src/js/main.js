@@ -56,9 +56,9 @@ $(function(){
 
 	//send mail
 	$( document ).ready(function() {
-		$(".footer-form").submit(function(e){
+		$(".video__form form").submit(function(e){
 				e.preventDefault();
-				sendAjaxForm('.footer-form', 'http://localhost:3000/mail.php');
+				sendAjaxForm('.video__form form', 'mail.php');
 
 				function sendAjaxForm(ajax_form, url) {
 						$.ajax({
@@ -67,21 +67,21 @@ $(function(){
 								dataType: "html",
 								data: $(ajax_form).serialize(),  // Сеарилизуем объект
 								beforeSend: function(data) { // событие до отправки
-									$('.footer_btn').attr('disabled', 'disabled');						
+									$('.video__btn').attr('disabled', 'disabled');						
 								},
 								success: function(response) { //Данные отправлены успешно
 										console.log(response);
 										result = $.parseJSON(response);
 										console.log(result);
-										$(".footer-form").trigger("reset");
+										$(".vide__form form").trigger("reset");
 
-										$('.modal-head-name').html("Спасибо!");
-										$('.modal-head-price').html("Наш менеджер свяжется с вами в ближайшее время.");
-										$(".modal-overlay1").fadeIn();
-										$(".modal1").fadeIn();
-										$(".modal1").css({"transform" : "translateY(0%)"});
-										$("body").css({"overflow":"hidden"});
-										$('.workim__btn').removeAttr('disabled');
+										// $('.modal-head-name').html("Спасибо!");
+										// $('.modal-head-price').html("Наш менеджер свяжется с вами в ближайшее время.");
+										// $(".modal-overlay1").fadeIn();
+										// $(".modal1").fadeIn();
+										// $(".modal1").css({"transform" : "translateY(0%)"});
+										// $("body").css({"overflow":"hidden"});
+										// $('.workim__btn').removeAttr('disabled');
 								}
 						});
 				}
