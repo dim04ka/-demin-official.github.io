@@ -1,6 +1,6 @@
 ---
 deployment:
   tasks:
-    - export REPOPATH=/home/host0609/demin-official.by/repositories/demin-official.by/master/*
+    - export REPOPATH=/home/host0609/demin-official.by/repositories/demin-official.by/*
     - export SITEPATH=/home/host0609/demin-official.by/
     - /bin/rsync -rav --exclude '.git' --exclude '.cpanel.yml' --del $REPOPATH $SITEPATH
