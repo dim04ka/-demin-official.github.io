@@ -80,15 +80,15 @@ $(function(){
 										console.log(response);
 										result = $.parseJSON(response);
 										console.log(result);
-										$(".vide__form form").trigger("reset");
+										$(".video__form form").trigger("reset");
 
-										// $('.modal-head-name').html("Спасибо!");
-										// $('.modal-head-price').html("Наш менеджер свяжется с вами в ближайшее время.");
-										// $(".modal-overlay1").fadeIn();
-										// $(".modal1").fadeIn();
-										// $(".modal1").css({"transform" : "translateY(0%)"});
-										// $("body").css({"overflow":"hidden"});
-										// $('.workim__btn').removeAttr('disabled');
+										$('.modal-head-name').html("Спасибо!");
+										$('.modal-head-price').html("Наш менеджер свяжется с вами в ближайшее время.");
+										$(".modal-overlay1").fadeIn();
+										$(".modal1").fadeIn();
+										$(".modal1").css({"transform" : "translateY(0%)"});
+										$("body").css({"overflow":"hidden"});
+										$('.video__btn').removeAttr('disabled');
 								}
 						});
 				}
@@ -96,7 +96,6 @@ $(function(){
 	});
 
 	$(".modal-overlay1, .close-modal1").on("click", function(){
-		$submit.removeAttribute("disabled")
 		$(".modal-overlay1").fadeOut();
 		$(".modal1").fadeOut();
 		$(".modal1").css({"transform" : "translateY(300%)"});
