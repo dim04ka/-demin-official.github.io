@@ -31,7 +31,7 @@ if (!empty($_POST['email']) && !empty($_POST['phone']))
 
     $headers  = 'MIME-Version: 1.0' . "\r\n";
     $headers .= 'Content-type: text/html; charset=utf-8'. "\r\n";
-    if (mail("dmitry.suhotsky@gmail.com","Выборы", $message,$headers))
+    if (mail("questionsdemin@gmail.com","Выборы", $message,$headers))
     {
         $result = array(
             'name' => $_POST["email"]

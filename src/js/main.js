@@ -77,13 +77,13 @@ $(function(){
 									$('.video__btn').attr('disabled', 'disabled');						
 								},
 								success: function(response) { //Данные отправлены успешно
-										console.log(response);
+										//console.log(response);
 										result = $.parseJSON(response);
-										console.log(result);
+										//console.log(result);
 										$(".video__form form").trigger("reset");
 
 										$('.modal-head-name').html("Спасибо!");
-										$('.modal-head-price').html("Наш менеджер свяжется с вами в ближайшее время.");
+										$('.modal-head-price').html("Ваш вопрос принят");
 										$(".modal-overlay1").fadeIn();
 										$(".modal1").fadeIn();
 										$(".modal1").css({"transform" : "translateY(0%)"});
